@@ -1,90 +1,9 @@
-/*
-We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
-However, this blank file is available if you prefer
-*/
-
-
-#slides {
-    display: none
-}
-
-.slidesjs-container {
-    max-height: 506px;
-}
-
-#slides .slidesjs-navigation {
-    margin-top: 3px;
-}
-
-.item img {
-    width: 100%;
-}
-
-#slides .slidesjs-previous {
-    margin-right: 5px;
-    float: left;
-}
-
-#slides .slidesjs-next {
-    margin-right: 5px;
-    float: left;
-}
-
-.slidesjs-pagination {
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-    list-style: none;
-}
-
-.slidesjs-pagination li {
-    display: inline-block;
-    margin: 0 1px;
-}
-
-.slidesjs-pagination li a {
-    display: inline-block;
-    width: 13px;
-    height: 0;
-    padding-top: 13px;
-    background-image: url(../img/pagination.png);
-    background-position: 0 0;
-    overflow: hidden;
-}
-
-.slidesjs-pagination li a.active,
-.slidesjs-pagination li a:hover.active {
-    background-position: 0 -13px
-}
-
-.slidesjs-pagination li a:hover {
-    background-position: 0 -26px
-}
-
-#slides a:link,
-#slides a:visited {
-    color: #333
-}
-
-#slides a:hover,
-#slides a:active {
-    color: #9e2020
-}
-
-#slides {
-    display: none
-}
-
-.container {
-    margin: 0 auto
-}
 /* For tablets & smart phones */
 
 @media (max-width: 767px) {
     body {
         padding-left: 20px;
         padding-right: 20px;
-        overflow-x: hidden;
     }
     .container {
         width: auto
@@ -195,7 +114,7 @@ body {
 }
 
 .center {
-    text-align: center !important;
+    text-align: center;
 }
 
 #wrapper {
@@ -214,7 +133,7 @@ body {
 }
 
 .right-align {
-    text-align: right;
+    text-align: right !important;
 }
 
 .top {
@@ -228,7 +147,7 @@ body {
 }
 
 label {
-    width: 100%;
+    width: 30%;
     display: inline-block;
     vertical-align: top;
 }
@@ -251,8 +170,6 @@ label {
 
 .tires {
     background: url(../img/tires.jpg) no-repeat left top;
-    height: 66px;
-    margin-top: 10px;
 }
 
 .blue-heading {
@@ -264,7 +181,7 @@ label {
 }
 
 .yellow-heading {
-    color: #0280A5;
+    color: #fab700;
     font-weight: bold;
     line-height: normal;
     margin-top: 10px;
@@ -282,7 +199,7 @@ label {
 }
 
 .title {
-    background: #0280A5;
+    background: #fab700;
     width: 100%;
     padding: 13px 0px 14px 20px;
     color: #fff;
@@ -314,7 +231,7 @@ label {
 }
 
 .owl-theme .owl-controls .owl-page span {
-    background: #0280A5 !important;
+    background: #fab700 !important;
 }
 
 .inner li:before {
@@ -337,7 +254,7 @@ label {
 }
 
 .logo {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 #top-search {
@@ -406,9 +323,9 @@ label {
     input[placeholder],
     [placeholder],
     *[placeholder] {
-
-        text-transform: capitalize;
-        font-size: 12px !important;
+        color: #fff !important;
+        text-transform: uppercase;
+        font-size: 14px !important;
     }
     .navbar li .dropdown ul > li a {
         display: block;
@@ -523,88 +440,4 @@ label {
     #sub-nav {
         display: none;
     }
-
-    input[type="submit"] {
-        margin-top:15px;
-    }
 }
-
-/* Additional Styles */
-.large {
-    font-size: 1.4em;
-    letter-spacing: normal;
-    font-weight: bold;
-}
-
-.noMargin {
-    margin:0 auto;
-}
-
-.noMarginLeft {
-    margin:0 auto;
-}
-
-
-.spacer {
-    margin: 10px 10px;
-    height: 1px;
-    width: 100%;
-    display: inline-block;
-}
-
-.leftColumn {
-    background: #FFC423;
-    padding:5px;
-    height: 100%;
-    color:#fff;
-    text-align: center;
-    min-height: 592px; /* Not needed, for presentation purposes only */
-}
-
-.leftColumn {
-    padding:5px;
-    height: 100%;
-    color:#fff;
-    text-align: center;
-    min-height: 592px; /* Not needed, for presentation purposes only */
-}
-
-.footer1, .footer2 {
-    margin:10px 0px 10px -20px;
-    border: 1px 1px solid #cecece;
-
-}
-
-.footnote {
-    border-top:1px #cecece solid;
-    padding-top:10px;
-    text-align: center;
-}
-
-.footnote p {
-    font-size: 9px;
-}
-
-.footer_nav li {
-    display: inline-block;
-    text-transform: uppercase;
-    margin-left:10px;
-    padding-right:10px;
-}
-
-.footer_nav li a {
-    color:#1e1e1e;
-}
-
-.footer_nav li:after {
-    content: "|";
-    display: inline-block;
-    color:darkred;
-    margin-left:10px;
-    width: 1px;
-}
-
-#fullName {
-    margin-bottom: 10px;
-}
-

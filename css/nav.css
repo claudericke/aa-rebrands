@@ -1,0 +1,207 @@
+.menu {
+    display: block;
+    background: url(../img/nav.jpg) repeat-x #000;
+    border-radius: 10px;
+    height: 40px;
+    color: #fff;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.menu>li {}
+
+.menu li a {
+    font-weight: 600;
+    text-decoration: none;
+    padding: 7px;
+    display: block;
+    color: #ffffff;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.menu li a:hover,
+.menu li:hover > a,
+.menu li ul li a:hover,
+.menu li ul li:hover {
+    color: #fff;
+    background: #0280a5;
+}
+/* hide the second level menu */
+
+.menu ul {
+    display: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    top: 39px;
+    left: 0px;
+    background: #5d5d5d;
+}
+/* display second level menu on hover */
+
+.menu li:hover > ul {
+    display: block;
+}
+
+.menu ul li {
+    display: block;
+    float: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    width:240px;
+}
+
+.menu ul li a,
+.menu ul li ul li a {
+    font-size: 12px;
+    font-weight: normal;
+    display: block;
+    color: #fff;
+    border-left: 3px solid #FCFCFC;
+    background: #5d5d5d;
+}
+
+.menu ul li ul {
+    padding: 5px;
+    width: 240px;
+}
+
+.menu ul li a:hover,
+.menu ul li:hover > a {
+    background: #141414;
+    border-left: 3px solid #fab700;
+    color: #fff;
+}
+/* change level 3 menu positions */
+
+.menu ul ul {
+    left: 240px;
+    top: 0px;
+}
+/* change level 4 menu positions */
+
+.menu ul ul ul {
+    left: 300px;
+    top: 0px;
+}
+
+.mobile-menu {
+    display: none;
+    width: 100%;
+    padding: 11px;
+    background: #3E4156;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.mobile-menu:hover {
+    background: #fab700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.mobile-menu {
+    margin-top:30px;
+    background: #fab700;
+}
+/* Media Queries */
+
+@media (max-width: 767px) {
+    .menu {
+        display: none;
+        background: none;
+        border-radius: 0px;
+        height: auto;
+
+
+    }
+    .mobile-menu {
+        display: block;
+        margin-top: 20px;
+    }
+
+        .mobile-menu {
+        background: #1e1e1e;
+        height: 50px;
+        color: #fff;
+    }
+
+    .mobile-menu:hover {
+        background: #0280a5;
+    }
+
+
+    nav {
+        margin: 0;
+        background: none;
+    }
+
+    .menu li {
+        display: block;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    .menu li a {
+        background: #5d5d5d;
+        color: #fff;
+    }
+    .menu li a:hover,
+    .menu li:hover > a {
+        background: #0280a5;
+        color: #fff;
+        border-left: 0px solid #fab700;
+    }
+
+    .footer_nav li {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tires {
+        width: 117% !important;
+    }
+
+     .footer_nav li:after {
+        content: "";
+    }
+    /*level 2 and 3 - make same width as all items*/
+
+    .menu ul,
+    .menu ul li ul {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding-left: 20px;
+        width: 100%;
+        display: none;
+    }
+    .menu ul ul {
+        left: 0;
+    }
+
+    .menu>li {
+        margin-top: -3px !important;
+    }
+
+    .menu ul li a {
+        border: none !important
+    }
+
+}
+
+/*end media queries*/
