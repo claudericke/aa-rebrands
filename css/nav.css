@@ -69,7 +69,6 @@
     font-weight: normal;
     display: block;
     color: #fff;
-    border-left: 3px solid #FCFCFC;
     background: #5d5d5d;
 }
 
@@ -81,7 +80,6 @@
 .menu ul li a:hover,
 .menu ul li:hover > a {
     background: #141414;
-    border-left: 3px solid #fab700;
     color: #fff;
 }
 /* change level 3 menu positions */
