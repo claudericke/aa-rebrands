@@ -608,3 +608,6 @@ label {
     margin-bottom: 10px;
 }
 
+.footer_nav li:last-child:after {
+    content: "";
+}
